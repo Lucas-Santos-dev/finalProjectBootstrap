@@ -19,7 +19,7 @@
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
-  --background-color: #ffffff; /* Background color for the entire website, including individual sections */
+  --background-color: #212121; /* Background color for the entire website, including individual sections */
   --default-color: #444444; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #273d4e; /* Color for headings, subheadings and title throughout the website */
   --accent-color: #ff4a17; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
@@ -45,7 +45,7 @@
 }
 
 .dark-background {
-  --background-color: #000910;
+  --background-color: #212121;
   --default-color: #ffffff;
   --heading-color: #ffffff;
   --surface-color: #28323a;
@@ -1014,15 +1014,21 @@ section,
   font-weight: 700;
   font-size: 28px;
   margin-bottom: 20px;
+  color: #00CED1;
+}
+
+.about p {
+  color: #fff;
 }
 
 .about .fst-italic {
-  color: color-mix(in srgb, var(--default-color), var(--contrast-color) 50%);
+  color: #fff;
 }
 
 .about .content ul {
   list-style: none;
   padding: 0;
+  color: #fff;
 }
 
 .about .content ul li {
@@ -1076,6 +1082,7 @@ section,
   margin: 0;
   font-family: var(--heading-font);
   font-size: 16px;
+  color: #fff;
 }
 
 /*--------------------------------------------------------------
@@ -1841,6 +1848,5 @@ section,
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
-.starter-section {
+/* .starter-section {
   /* Add your styles here */
-}
