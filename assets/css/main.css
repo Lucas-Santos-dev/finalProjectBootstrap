@@ -221,6 +221,11 @@ h6 {
 /*--------------------------------------------------------------
 # Global Header
 --------------------------------------------------------------*/
+
+a {
+  text-decoration: none;
+}
+
 .header {
   --background-color: rgba(0, 0, 0, 0);
   --default-color: #ffffff;
@@ -232,13 +237,13 @@ h6 {
   z-index: 997;
 }
 
-.header .logo {
-  line-height: 1;
-}
-
 .header .logo img {
   max-height: 36px;
   margin-right: 8px;
+}
+
+.header a {
+  text-decoration: none;
 }
 
 .header .logo h1 {
@@ -246,6 +251,7 @@ h6 {
   margin: 0;
   font-weight: 700;
   color: var(--heading-color);
+  text-decoration: none;
 }
 
 .header .cta-btn,
@@ -257,7 +263,8 @@ h6 {
   border-radius: 4px;
   transition: 0.3s;
   text-transform: uppercase;
-  border: 2px solid var(--contrast-color);
+  text-decoration: none;
+  border-bottom: 15px;
 }
 
 .header .cta-btn:hover,
@@ -265,6 +272,7 @@ h6 {
   color: var(--contrast-color);
   background: var(--accent-color);
   border-color: var(--accent-color);
+  border-radius: 20px;
 }
 
 @media (max-width: 1200px) {
@@ -337,6 +345,7 @@ h6 {
     transition: 0.3s;
     position: relative;
     text-transform: uppercase;
+    text-decoration: none;
   }
 
   .navmenu a i,
@@ -879,7 +888,7 @@ section,
   margin: 0;
   letter-spacing: 1.5px;
   text-transform: uppercase;
-  color: color-mix(in srgb, var(--default-color), transparent 50%);
+  color: #fff;
   position: relative;
 }
 
@@ -888,7 +897,7 @@ section,
   width: 120px;
   height: 1px;
   display: inline-block;
-  background: var(--accent-color);
+  background: #fff;
   margin: 4px 10px;
 }
 
@@ -964,9 +973,10 @@ section,
   letter-spacing: 1px;
   display: inline-block;
   padding: 10px 30px;
-  border-radius: 4px;
+  border-radius: 20px;
   transition: 0.3s;
   text-transform: uppercase;
+  text-decoration: none;
 }
 
 .hero .btn-get-started:hover {
@@ -979,6 +989,7 @@ section,
   margin-left: 25px;
   font-weight: 400;
   color: var(--default-color);
+  text-decoration: none;
 }
 
 .hero .btn-watch-video i {
@@ -1127,6 +1138,10 @@ section,
   left: calc(50% - 36px);
 }
 
+.service-item .details h3 {
+  text-decoration: none;
+}
+
 .services .details h3 {
   font-weight: 700;
   margin: 10px 0 15px 0;
@@ -1143,6 +1158,7 @@ section,
 
 .services .service-item:hover .details h3 {
   color: var(--accent-color);
+
 }
 
 .services .service-item:hover .details .icon {
@@ -1475,6 +1491,7 @@ section,
   line-height: 1;
   margin-bottom: 5px;
   transition: all 0.3s ease-in-out;
+  color: #fff;
 }
 
 .portfolio .portfolio-filters li:hover,
